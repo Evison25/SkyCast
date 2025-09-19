@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to left,#32C7EC,#326AEC,#5732EC);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  
+  border-radius: 15px;
+}
+
+.left-panel {
+    background-image: url("https://files.123freevectors.com/wp-content/original/154304-bright-blue-background-vector-image.jpg");
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.left-panel h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.left-panel p {
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-bottom: 90px;
+}
+
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #333;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius:40px;
+}
+
+.right-panel h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.right-panel input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.right-panel label {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.right-panel .join-us-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #299EE3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.right-panel .join-us-btn:hover {
+  background-color: #136290;
+  transition: 0.5s ease-in-out;
+}
+
+.or-signup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.or-signup span {
+  font-size: 16px;
+  color: #333;
+
+}
+
+.social-signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-signup button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.apple-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+}
+
+.social-signup button:hover {
+  opacity: 0.8;
+}
+
+.google-btn,.apple-btn button:hover{
+    transition: 0.5s ease-in-out;
+}
