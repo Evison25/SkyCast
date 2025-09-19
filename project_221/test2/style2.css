@@ -1,0 +1,16 @@
+Style.css
+.image-container {
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+  width: 30px;
+  margin: 50px auto;
+}
+
+.image-container:hover {
+  opacity: 0.4;
+}
+
+img {
+  width: 100%;
+  display: block;
+}

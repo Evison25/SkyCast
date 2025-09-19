@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background: black;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: aliceblue;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  user-select: none;
+}
+
+/* 1. Color Change */
+.color-change:hover {
+  background-color: #e74c3c;
+}
+
+/* 2. Sliding Effect */
+.slide-in {
+  overflow: hidden;
+  background-color: #2ecc71;
+}
+
+.slide-in .slide-text {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.9);
+  padding: 8px 0;
+  transition: bottom 0.3s ease;
+  pointer-events: none;
+  border-radius: 0 0 6px 6px;
+}
+
+.slide-in:hover .slide-text {
+  bottom: 0;
+}
+
+/* 3. Fill Effect */
+.fill-effect {
+  background-color: #9b59b6;
+  color: white;
+  position: relative;
+  z-index: 0;
+}
+
+.fill-effect .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.2);
+  z-index: -1;
+  transition: width 0.4s ease;
+  border-radius: 6px;
+}
+
+.fill-effect:hover .overlay {
+  width: 100%;
+}
+
+/* 4. Border Effect */
+.border-effect {
+  background-color: transparent;
+  color: #27ae60;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.border-effect:hover {
+  border-color: darkgreen;
+  color: #14532d;
+  background-color: lightgreen;
+}
+
+/* 5. Scale Effect */
+.scale-effect:hover {
+  transform: scale(1.1);
+}
+
+/* 6. Rotate Effect */
+.rotate-effect:hover {
+  transform: rotate(-360deg);
+}
+
+.ultimate_button{
+color: #F0F0F0;
+background-color: steelblue;
+height: 40px;
+width: 100px;
+font-size: large;
+border-radius: 5px;
+border: 2px  #042C4D solid;
+}
+
+.ultimate_button:hover{
+    transition: transform ease 0.4s  ;
+background-color: #042C4D;
+font-size:larger;
+transform:scale(1.2);
+cursor: no-drop;
+
+}
