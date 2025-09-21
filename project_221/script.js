@@ -1,31 +1,26 @@
-const apiKey = "C6LOxmKJIZ2h7q5D"; 
 
-// New Delhi coordinates and altitude
-const lat = 28.6139;
-const lon = 77.2090;
-const asl = 216; // Altitude in meters
+const islogged=false;
+function ToSignin(){
+location.assign("signin.html");
+}
+function ToIndex() {
+  const firstName = document.getElementById("first-name").value.trim();
+  const lastName = document.getElementById("last-name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const terms = document.getElementById("terms").checked;
 
-const url = `https://my.meteoblue.com/packages/basic-day?lat=${lat}&lon=${lon}&asl=${asl}&format=json&apikey=${C6LOxmKJIZ2h7q5D}`;
+  if (!firstName || !lastName || !email || !password) {
+    alert("Please fill in all fields.");
+    return;
+  }
 
-fetch(url)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error: ${response.status}`);
-    }
-    return response.json();
-  })
-  .then(data => {
-    const forecast = data.data_day;
-    let output = "Date\t\tMax Temp (°C)\n----------------------------\n";
+  if (!terms) {
+    alert("You must accept the Terms & Conditions.");
+    islogged=true;
+    return;
+  }
 
-    forecast.time.forEach((date, i) => {
-      const temp = forecast.temperature_max[i];
-      output += `${date}\t${temp}°C\n`;
-    });
-
-    document.getElementById("forecast").innerText = output;
-  })
-  .catch(error => {
-    document.getElementById("forecast").innerText = "Failed to load forecast.\n" + error;
-    console.error("Error fetching weather data:", error);
-  });
+  // If all good → redirect
+  location.replace("index.html");
+}

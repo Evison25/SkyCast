@@ -258,5 +258,26 @@ margin-top: 60px;
 margin-left: -20px;
 }
 
-    
- 
+.social-icons .facebook{
+ color: hsl(0, 0%, 100%);
+ background-color: #007acc;
+ padding-left: 2px;
+ padding-right: 2px;
+border-radius: 5px;
+}
+
+.social-icons .x{
+ color: hsl(0, 0%, 100%);
+ background-color: #000000;
+ padding-left: 2px;
+ padding-right: 2px;
+border-radius: 5px;
+}
+.social-icons .instagram{
+background-color: #000000;
+opacity: 100%;
+padding-left: 2px;
+padding-right: 2px;
+border-radius: 5px;
+color: 	#C13584;
+}

@@ -38,7 +38,9 @@ body {
 .left-panel h1 {
   font-size: 50px;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+   font-family: "Alan Sans", sans-serif;
+   font-style: normal;
   margin-left: 20px;
 }
 
@@ -47,6 +49,8 @@ body {
   font-weight: 400;
   margin-left: 20px;
   margin-bottom: 90px;
+     font-family: "Alan Sans", sans-serif;
+   font-style: normal;
 }
 
 .right-panel {
@@ -55,17 +59,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #ffffff;
+
   color: #333;
   border-top-right-radius: 40px;
   border-bottom-right-radius:40px;
 }
 
 .right-panel h2 {
-  font-size: 24px;
-  font-weight: 500;
+ 
   margin-bottom: 20px;
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+    font-weight: 500;
+  font-style: normal;
+font-size: 48px;
 }
+
 
 .right-panel input {
   width: 100%;
