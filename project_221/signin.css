@@ -106,6 +106,7 @@ font-size: 48px;
 
 .right-panel .join-us-btn:hover {
   background-color: #136290;
+  scale: 1.05;
   transition: 0.5s ease-in-out;
 }
 
@@ -150,10 +151,28 @@ font-size: 48px;
   border: none;
 }
 
-.social-signup button:hover {
-  opacity: 0.8;
+.join-us-btn:hover {
+  color: #ffffff;
+  background-color:black;
 }
 
 .google-btn,.apple-btn button:hover{
     transition: 0.5s ease-in-out;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #0e629e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.login-btn:hover {
+  background-color: #136290;
+  scale: 1.05;
+  transition: 0.5s ease-in-out;
 }

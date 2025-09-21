@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sunny"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=foggy"
+    />
     <script src="script.js"></script>
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <nav class="navbar">
       <div class="logo">
         <img
@@ -13,6 +28,7 @@
         />
         <span>SkyCast</span>
       </div>
+
       <div class="search-box">
         <input type="text" placeholder="Enter a city" />
         <button class="sub" type="submit"><i class="fa fa-search"></i></button>
@@ -24,10 +40,10 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
+
       <button onclick="ToSignin()" class="signup">Sign In</button>
     </nav>
-  </head>
-  <body>
+
     <div class="main_container">
       <!-- Weather Widget -->
       <div class="weather-widget">
@@ -47,35 +63,110 @@
           </div>
         </div>
       </div>
-      <div class="timely-weather">
-        <div class="morning">
 
+      <div draggable="true" class="timely-weather">
+        <div class="data-block">
+          <h1>Mon</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+            <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+            height="90px"
+            width="90px">
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Tue</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+    <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+            >
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Wed</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+        <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+           >
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Thu</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+            <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+           >
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Fri</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+            <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+           >
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Sat</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+            <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+            >
+            
+          </div>
+        </div>
+        <div class="data-block">
+          <h1>Sun</h1>
+          <div class="time-block">
+            <span class="time-temp">28°</span>
+            <br>
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            alt="sunny"
+            >
+            
+          </div>
         </div>
       </div>
+
     </div>
-  </body>
-  <div>
+
     <footer class="footer">
       <div class="footer-content">
         <p>Contact Us</p>
         <div class="social-icons">
-          <a class="facebook" href="https://www.facebook.com/"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+          <a class="facebook" href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
           <a class="x" href="https://x.com/"><i class="fab fa-x"></i></a>
-          <a class="instagram" href="https://www.instagram.com/"
-            ><i class="fab fa-instagram"></i
-          ></a>
+          <a class="instagram" href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
     </footer>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=foggy"
-    />
-  </div>
+  </body>
 </html>
