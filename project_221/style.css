@@ -344,3 +344,21 @@ color: 	#C13584;
  padding-left: -40px;
  padding-right: -40px;
 }
+.temp-unit{
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background:none;
+  color: rgb(255, 255, 255);
+  font-family: "yahei", sans-serif;
+  font-weight: bold;
+}
+.temp-unit:hover{
+  
+  background-color: #141414;
+  color: white;
+  scale: 1.1;
+  transition: ease-in-out 0.3s;
+}

@@ -30,7 +30,7 @@
       </div>
 
       <div class="search-box">
-        <input type="text" placeholder="Enter a city" />
+        <input class="city-input" type="text" placeholder="Enter a city" />
         <button class="sub" type="submit"><i class="fa fa-search"></i></button>
       </div>
 
@@ -39,6 +39,10 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
+        <li> <select class="temp-unit" id="temp-unit" >
+          <option value="celsius">°C</option>
+          <option value="fahrenheit">°F</option>
+        </select></li>
       </ul>
 
       <button onclick="ToSignin()" class="signup">Sign In</button>
@@ -54,7 +58,11 @@
         <div class="widget-body">
           <div class="temp-block">
             <span class="temp-main">31°</span>
-            <span class="material-symbols-outlined"> foggy </span>
+            <img class="weather-icon"
+              src="weather-images/mist.png"
+              alt="foggy"
+              height="90px"
+              width="90px">
           </div>
           <div class="desc-block">
             <br />
@@ -71,7 +79,7 @@
             <span class="time-temp">28°</span>
             <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/clear.png"
             alt="sunny"
             height="90px"
             width="90px">
@@ -84,7 +92,7 @@
             <span class="time-temp">28°</span>
     <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/clear.png"
             alt="sunny"
             >
             
@@ -96,7 +104,7 @@
             <span class="time-temp">28°</span>
         <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/clear.png"
             alt="sunny"
            >
             
@@ -108,7 +116,7 @@
             <span class="time-temp">28°</span>
             <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/clear.png"
             alt="sunny"
            >
             
@@ -120,7 +128,7 @@
             <span class="time-temp">28°</span>
             <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/snow.png"
             alt="sunny"
            >
             
@@ -132,7 +140,7 @@
             <span class="time-temp">28°</span>
             <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/rain.png"
             alt="sunny"
             >
             
@@ -144,7 +152,7 @@
             <span class="time-temp">28°</span>
             <br>
             <img
-            src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+            src="weather-images/wind.png"
             alt="sunny"
             >
             
