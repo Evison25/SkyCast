@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=sunny"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=foggy"
-    />
-    <script src="script.js"></script>
-    <title>Weather App</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
         <img
           src="https://static.vecteezy.com/system/resources/previews/024/825/180/non_2x/3d-weather-icon-day-free-png.png"
-          height="70px"
-          width="70px"
+          height="70"
+          width="70"
+          alt="logo"
         />
         <span>SkyCast</span>
       </div>
@@ -39,17 +41,19 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact Us</a></li>
-        <li> <select class="temp-unit" id="temp-unit" >
-          <option value="celsius">°C</option>
-          <option value="fahrenheit">°F</option>
-        </select></li>
+        <li>
+          <select class="temp-unit" id="temp-unit">
+            <option value="celsius">°C</option>
+            <option value="fahrenheit">°F</option>
+          </select>
+        </li>
       </ul>
 
       <button onclick="ToSignin()" class="signup">Sign In</button>
     </nav>
 
+    <!-- main Container start -->
     <div class="main_container">
-      <!-- Weather Widget -->
       <div class="weather-widget">
         <div class="widget-header">
           <span id="widget-location">Rajpath Area, Delhi</span>
@@ -58,109 +62,109 @@
         <div class="widget-body">
           <div class="temp-block">
             <span class="temp-main">31°</span>
-            <img class="weather-icon"
-              src="weather-images/mist.png"
-              alt="foggy"
-              height="90px"
-              width="90px">
+            <div class="weather-icon">
+              <img src="weather-images/misty.png" alt="foggy" />
+            </div>
+            <p class="feels-like-p">
+              Feels like <span class="feels-like">30°</span>
+            </p>
           </div>
           <div class="desc-block">
+            <span class="condition">Foggy</span>
+            <span class="humidity">Humidity: 78%</span>
+            <span class="wind">Wind: 7 km/h</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timely-weather">
+        <div class="data-block">
+          <h1 id="d1">Mon</h1>
+          <div id="d1-time-block" class="time-block">
+            <span id="d1-time-temp" class="time-temp">28°</span>
             <br />
-            <p class="condition">Fog</p>
-            <p class="day-night">Day 32° • Night 26°</p>
+            <div id="d1-time-icon">
+              <img
+                src="weather-images/clear.png"
+                alt="sunny"
+                height="90"
+                width="90"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d2">Tue</h1>
+          <div id="d2-time-block" class="time-block">
+            <span id="d2-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d2-time-icon">
+              <img src="weather-images/clear.png" alt="sunny" />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d3">Wed</h1>
+          <div id="d3-time-block" class="time-block">
+            <span id="d3-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d3-time-icon">
+              <img src="weather-images/clear.png" alt="sunny" />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d4">Thu</h1>
+          <div id="d4-time-block" class="time-block">
+            <span id="d4-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d4-time-icon">
+              <img src="weather-images/clear.png" alt="sunny" />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d5">Fri</h1>
+          <div id="d5-time-block" class="time-block">
+            <span id="d5-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d5-time-icon">
+              <img src="weather-images/snow.png" alt="snow" />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d6">Sat</h1>
+          <div id="d6-time-block" class="time-block">
+            <span id="d6-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d6-time-icon">
+              <img src="weather-images/rain.png" alt="rain" />
+            </div>
+          </div>
+        </div>
+
+        <div class="data-block">
+          <h1 id="d7">Sun</h1>
+
+          <div id="d7-time-block" class="time-block">
+            <span id="d7-time-temp" class="time-temp">28°</span>
+            <br />
+            <div id="d7-time-icon">
+              <img src="weather-images/wind.png" alt="wind" />
+            </div>
           </div>
         </div>
       </div>
-
-      <div draggable="true" class="timely-weather">
-        <div class="data-block">
-          <h1>Mon</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-            <br>
-            <img
-            src="weather-images/clear.png"
-            alt="sunny"
-            height="90px"
-            width="90px">
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Tue</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-    <br>
-            <img
-            src="weather-images/clear.png"
-            alt="sunny"
-            >
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Wed</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-        <br>
-            <img
-            src="weather-images/clear.png"
-            alt="sunny"
-           >
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Thu</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-            <br>
-            <img
-            src="weather-images/clear.png"
-            alt="sunny"
-           >
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Fri</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-            <br>
-            <img
-            src="weather-images/snow.png"
-            alt="sunny"
-           >
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Sat</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-            <br>
-            <img
-            src="weather-images/rain.png"
-            alt="sunny"
-            >
-            
-          </div>
-        </div>
-        <div class="data-block">
-          <h1>Sun</h1>
-          <div class="time-block">
-            <span class="time-temp">28°</span>
-            <br>
-            <img
-            src="weather-images/wind.png"
-            alt="sunny"
-            >
-            
-          </div>
-        </div>
-      </div>
-
     </div>
+
+
+
 
     <footer class="footer">
       <div class="footer-content">
@@ -176,5 +180,35 @@
         </div>
       </div>
     </footer>
+
+
+
+
+
+
+<div class="loader">
+  <div class="cloud">
+    <div class="rainball"></div>
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+    <div class="ball6"></div>
+    
+
+   
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="mouth"></div>
+  </div>
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
